@@ -10,5 +10,12 @@ install:
 
 script:
   - npm run build
+  - npm run 
+  - npm preview
 
-  
+deploy:
+  provider: pages
+  skip_cleanup: true
+  keep_history: true
+  on:
+    branch: main
